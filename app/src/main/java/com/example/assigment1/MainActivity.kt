@@ -3,7 +3,7 @@ package com.example.assigment1
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -35,7 +35,7 @@ fun App() {
         }
 
         composable(
-            route = "resultScreen/{name}/{birthday}/{email}"
+            route = "resultScreen"
         ) { SecondScreen() }
     }
 
